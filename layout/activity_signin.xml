@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signin_Activity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            app:srcCompat="@drawable/logofi"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/mycamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/mycamp"
+            android:textColor="#F8010D33"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/backgroundeditview"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/name_example_com"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:autofillHints="" />
+
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/backgroundeditview"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/pas"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_gradient"
+            android:text="@string/sign_in"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FC02093C" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/don_t_have_an_account_signup"
+            android:textColor="#FC101010"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
